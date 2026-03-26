@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Receptionist — Never Miss a Call Again</title>
+  <style>
+    :root {
+      --primary: #0077ff;
+      --dark: #111;
+      --light: #f8f9fa;
+      --text: #333;
+      --radius: 6px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--text);
+      background-color: var(--light);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    main {
+      flex: 1;
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.25s ease;
+    }
+
+    .cta:hover {
+      background: #005fd4;
+    }
+
+    .demo {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .demo h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .demo p {
+      margin-bottom: 1rem;
+    }
+
+    .form {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+    }
+
+    form input {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.25s ease;
+    }
+
+    button:hover {
+      background: #005fd4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--dark);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      main {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Never Miss a Call Again — AI Receptionist 24/7</h1>
+    <p>Professional virtual receptionist powered by AI to answer, route, and schedule calls anytime — so you can focus on your business.</p>
+    <a href="#demo" class="cta">See Demo</a>
+  </header>
+
+  <main>
+    <section id="demo" class="demo">
+      <h2>Try the Demo</h2>
+      <p>Experience how our AI receptionist answers your calls naturally and professionally.</p>
+      <a href="tel:+15551234567" class="cta">Call Now</a>
+      <p style="margin-top:0.5rem; font-size:0.9rem; color:#666;">Or interact with our chatbot below (coming soon).</p>
+    </section>
+
+    <section id="contact" class="form">
+      <h2>Get in Touch</h2>
+      <p>Enter your details and we’ll reach out to show you how it works for your business.</p>
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+        <label for="business">Business Name</label>
+        <input type="text" id="business" name="business" placeholder="Acme Co." required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 AI Receptionist | Smart call handling for modern businesses.
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! We'll contact you shortly.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
